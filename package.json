@@ -3,7 +3,7 @@
     "test": "echo \"Error: No test specified\" && exit 1",
     "server": "npm start --prefix server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "concurrently": "^8.0.1"
