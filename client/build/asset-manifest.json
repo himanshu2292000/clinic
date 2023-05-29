@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a93e71ea.css",
+    "main.js": "/static/js/main.3ae5b623.js",
+    "static/media/doc2.png": "/static/media/doc2.5c494406cbdc59aac2c9.png",
+    "static/media/bannerBg.jpg": "/static/media/bannerBg.eb5caa2798449936471b.jpg",
+    "static/media/womb.png": "/static/media/womb.726baafabc628c72f93d.png",
+    "static/media/as1.jpg": "/static/media/as1.6095e93a6808a343894b.jpg",
+    "static/media/immunity.png": "/static/media/immunity.2793b67dc7354f6cd669.png",
+    "static/media/caduceus.png": "/static/media/caduceus.446b3d21ebe367d16311.png",
+    "static/media/undraw_medicine_b-1-ol.svg": "/static/media/undraw_medicine_b-1-ol.c7243865c10475fef2a40b72ee5deb32.svg",
+    "static/media/undraw_doctor_kw-5-l.svg": "/static/media/undraw_doctor_kw-5-l.da3d1b8d33fa7060ec36964110e2616b.svg",
+    "static/media/logo.png": "/static/media/logo.2308b2c4644107ecb0f1.png",
+    "index.html": "/index.html",
+    "main.a93e71ea.css.map": "/static/css/main.a93e71ea.css.map",
+    "main.3ae5b623.js.map": "/static/js/main.3ae5b623.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a93e71ea.css",
+    "static/js/main.3ae5b623.js"
+  ]
+}
