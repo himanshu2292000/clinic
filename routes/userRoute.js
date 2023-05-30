@@ -57,8 +57,8 @@ get(authHelper, getAllDoctors)
 authroute.route('/bookAppointment').
 post(authHelper, makeAppointment)
 
-authroute.route('/checkAvailability').
-post(authHelper, doctorAvailability)
+// authroute.route('/checkAvailability').
+// post(authHelper, doctorAvailability)
 
 authroute.route('/userAppointments').
 get(authHelper, getUserAppointment)

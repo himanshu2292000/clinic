@@ -329,42 +329,42 @@ module.exports.makeAppointment = async (req, res) => {
 }
 
 // check Availability
-module.exports.doctorAvailability = async (req, res) => {
-    try {
-        const fromtime = moment(req.body.time, "HH:mm").subtract(1, "hours").toISOString();
-        const totime = moment(req.body.time, "HH:mm").add(1, "hours").toISOString();
+// module.exports.doctorAvailability = async (req, res) => {
+//     try {
+//         const fromtime = moment(req.body.time, "HH:mm").subtract(1, "hours").toISOString();
+//         const totime = moment(req.body.time, "HH:mm").add(1, "hours").toISOString();
 
-        const doctorId = req.body.doctorId;
+//         const doctorId = req.body.doctorId;
 
-        const appointments = await appointmentModel.find({
-            doctorId,
-            date: date,
-            time: {
-                $gte: fromtime,
-                $lte: totime
-            }
-        })
+//         const appointments = await appointmentModel.find({
+//             doctorId,
+//             date: date,
+//             time: {
+//                 $gte: fromtime,
+//                 $lte: totime
+//             }
+//         })
 
-        if (appointments.length > 0) {
-            res.status(201).send({
-                message: "Appointment not available at this time",
-                success: true,
-            })
-        } else {
-            res.status(201).send({
-                message: "Appointment Available",
-                success: true,
-            })
-        }
-    } catch (error) {
+//         if (appointments.length > 0) {
+//             res.status(201).send({
+//                 message: "Appointment not available at this time",
+//                 success: true,
+//             })
+//         } else {
+//             res.status(201).send({
+//                 message: "Appointment Available",
+//                 success: true,
+//             })
+//         }
+//     } catch (error) {
         
-        res.status(500).send({
-            message: "Error In Booking",
-            success: false,
-            error,
-        });
-    }
-}
+//         res.status(500).send({
+//             message: "Error In Booking",
+//             success: false,
+//             error,
+//         });
+//     }
+// }
 
 module.exports.getUserAppointment = async (req, res) => {
     try {
